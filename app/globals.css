@@ -1,0 +1,29 @@
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 font-sans;
+}
+
+* {
+  @apply border-slate-800;
+}
+
+::selection {
+  @apply bg-sky-500 text-slate-950;
+}
+
+.prose a {
+  @apply text-sky-300 hover:text-sky-100;
+}
